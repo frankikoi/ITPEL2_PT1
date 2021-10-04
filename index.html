@@ -13,7 +13,7 @@
     <ion-app>
         <ion-header>
             <ion-toolbar>
-                <ion-title>BudgetPlanner</ion-title>
+                <ion-title>Weekly Budget Planner</ion-title>
             </ion-toolbar>
         </ion-header>
 
@@ -24,16 +24,32 @@
                     <ion-col size-md="6" offset-md="3">
                         <ion-card>
                             <ion-card-header>
-                                <ion-card-title> New Expense </ion-card-title>
+                                <ion-card-title> Budget Planner </ion-card-title>
                             </ion-card-header>
                             <ion-card-content>
                                 <ion-item>
-                                    <ion-label position = "floating"> Expense</ion-label>
+                                    <ion-label>Day</ion-label>
+                                    <ion-select id = 'input-week'>
+                                      <ion-select-option value="Sunday">Sunday</ion-select-option>
+                                      <ion-select-option value="Monday">Monday</ion-select-option>
+                                      <ion-select-option value="Tuesday">Tuesday</ion-select-option>
+                                      <ion-select-option value="Wednesday">Wednesday</ion-select-option>
+                                      <ion-select-option value="Thursday">Thursday </ion-select-option>
+                                      <ion-select-option value="Friday">Friday</ion-select-option>
+                                      <ion-select-option value="Saturday">Saturday</ion-select-option>
+                                    </ion-select>
+                                  </ion-item>
+                                <ion-item>
+                                    <ion-label position = "floating"> Reason of Expense</ion-label>
                                     <ion-input type = "text" id="input-reason"></ion-input>
                                 </ion-item>
                                 <ion-item>
-                                    <ion-label position = "floating"> Expense Amount</ion-label>
+                                    <ion-label position = "floating"> Amount</ion-label>
                                     <ion-input type = "number" id="input-amount"> </ion-input>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label position = "floating"> Quantity </ion-label>
+                                    <ion-input type = "number" id="input-many"> </ion-input>
                                 </ion-item>
                                 <div margin-vertical text-right>
                                     <ion-button id = "btn-clear">Clear
