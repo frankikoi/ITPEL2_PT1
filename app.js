@@ -31,7 +31,6 @@ addButton.addEventListener('click', () => {
         console.log(reasonEntered, amountEntered);
 
         const newExpenses = document.createElement('ion-item');
-        newExpenses.textContent = reasonEntered + ': P' + amountEntered;
         expensesList.appendChild(newExpenses);
 
        
